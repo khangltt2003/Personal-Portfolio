@@ -1,0 +1,60 @@
+.gradient-background {
+    background: linear-gradient(300deg,  #d4af37,#fdfd96, #f4b393);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.body{
+  position: relative;
+}
+
+.fixed-position-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+
+.text-navy{
+  color: #18206f;
+}
+  
+hr{
+  border-bottom: 10px solid #18206f;
+}
+
+.edu-container{
+  height: 300px;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+@media (max-width: 992px){
+  .contact-container{
+    justify-content: center;
+  }
+
+  #nav-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
